@@ -1,0 +1,18 @@
+### Gradle template
+.gradle
+**/build/
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# User-specific stuff
+.idea/
+
+# **/.credentials
+
+# IntelliJ
+out/
+
+.allure
+/allure-results
+/allure-report

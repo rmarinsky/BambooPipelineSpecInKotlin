@@ -1,0 +1,28 @@
+version: 2
+plan:
+  project-key: AUT
+  key: RATAUT
+  name: Run API tests for application under test
+
+stages:
+  - Run API tests stage:
+      jobs:
+        - Run tests and report ones
+
+docker: gradle:7.2.0-jdk11
+
+Run API tests and report ones:
+  requirenments:
+    - system.docker.executable
+  tasks:
+    - script:
+        - gradle apiTests allureReport --clean
+    - test-parser:
+        type: junit
+        test-results: 'build/test-results/**/*.xml'
+
+  artifacts:
+    - name: Allure Report
+      location: 'build/reports/allure-report/allureReport/'
+      pattern: '**/*.*'
+      required: true
