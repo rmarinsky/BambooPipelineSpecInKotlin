@@ -28,5 +28,5 @@ Running of the `main` method performing generation of `bamboo.yml` file and publ
 
 P.S. put `.credentials` file with your bamboo creds (ignore it in .gitignore) to publish Bamboo pipeline specification
 
-Usefull live tutuorial to implement distributed bamboo pipeline [youtube](
+Useful tutorial to implement distributed bamboo pipeline [youtube](
 https://www.youtube.com/watch?v=3JsxOKd7SQQ&ab_channel=ryanjones)
