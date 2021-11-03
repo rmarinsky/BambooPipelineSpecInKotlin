@@ -21,7 +21,7 @@ import com.atlassian.bamboo.specs.api.builders.docker.DockerConfiguration as doc
 /**
  * Plan configuration for Bamboo.
  *
- * @see [Bamboo Specs](https://confluence.atlassian.com/display/BAMBOO/Bamboo+Specs)
+ * @see [Bamboo Specs](https://docs.atlassian.com/bamboo-specs-docs/latest/specs.html?java#project)
  */
 @BambooSpec
 class PlanSpec {
